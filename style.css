@@ -102,3 +102,11 @@
   border-image: linear-gradient(to right, #ff1a40, #ff49ab, #452fff) 1;
   border-radius: 50%;
 }
+@media screen and (max-width: 480px) {
+  .single-char {
+    display: flex;
+    /* background: red; */
+    padding: 1.5rem 2rem;
+    margin: 3.5rem;
+  }
+}
