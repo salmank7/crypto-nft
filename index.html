@@ -7,16 +7,14 @@
     <!-- Owl Carousel CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css"
-    />
+    <!-- font-awesome -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
 
     <title>CryptoMan</title>
@@ -95,30 +93,29 @@
         <div>
           <img
             class="sm:block"
+            hidden
             src="/assets/images/Characters.png"
             alt="Charceters"
           />
           <!-- for mobile -->
           <!-- carousel -->
-          <!-- <div class="sm:hidden">
-            <div class="owl-carousel text-white container">
-              <div class="owl-slide">
-                <img src="/assets/images/Clone X 10.png" alt="character" />
-              </div>
-              <div class="owl-slide">
-                <img src="/assets/images/Clone X 11.png" alt="character" />
-              </div>
-              <div class="owl-slide">
-                <img src="/assets/images/Clone X 7.png" alt="character" />
-              </div>
-              <div class="owl-slide">
-                <img src="/assets/images/Clone X 6.png" alt="character" />
-              </div>
-              <div class="owl-slide">
-                <img src="/assets/images/Clone X 9.png" alt="character" />
-              </div>
-            </div>
-          </div> -->
+        </div>
+      </div>
+      <div class="up-carousel uppercarousel">
+        <div class="w-full">
+          <img class="w-full" src="/assets/images/Clone X 10.png" alt="" />
+        </div>
+        <div class="w-full">
+          <img class="w-full" src="/assets/images/Clone X 11.png" alt="" />
+        </div>
+        <div class="w-full">
+          <img class="w-full" src="/assets/images/Clone X 7.png" alt="" />
+        </div>
+        <div class="w-full">
+          <img class="w-full" src="/assets/images/Clone X 6.png" alt="" />
+        </div>
+        <div class="w-full">
+          <img class="w-full" src="/assets/images/Clone X 9.png" alt="" />
         </div>
       </div>
 
@@ -132,16 +129,40 @@
 
         <!-- mobile brands -->
         <div class="sm:hidden bg-pinkishRed grid grid-cols-3">
-          <img src="/assets/images/Relume/Black.png" alt="picture" />
-          <img src="/assets/images/Webflow/Black.png" alt="picture" />
-          <img src="/assets/images/Relume/Black.png" alt="picture" />
-          <img src="/assets/images/Webflow/Black.png" alt="picture" />
-          <img src="/assets/images/Relume/Black.png" alt="picture" />
-          <img src="/assets/images/Webflow/Black.png" alt="picture" />
           <img
+            class="w-full"
             src="/assets/images/Relume/Black.png"
             alt="picture"
-            class="last-item"
+          />
+          <img
+            class="w-full"
+            src="/assets/images/Webflow/Black.png"
+            alt="picture"
+          />
+          <img
+            class="w-full"
+            src="/assets/images/Relume/Black.png"
+            alt="picture"
+          />
+          <img
+            class="w-full"
+            src="/assets/images/Webflow/Black.png"
+            alt="picture"
+          />
+          <img
+            class="w-full"
+            src="/assets/images/Relume/Black.png"
+            alt="picture"
+          />
+          <img
+            class="w-full"
+            src="/assets/images/Webflow/Black.png"
+            alt="picture"
+          />
+          <img
+            src="/assets/images/Webflow/Black.png"
+            alt="picture"
+            class="col-span-3 mx-auto"
           />
         </div>
       </div>
@@ -228,9 +249,11 @@
       <!-- characters -->
       <div class="container">
         <!-- charcters heading-->
-        <div class="flex items-center justify-between">
+        <div
+          class="flex items-center justify-between flex-col md:flex-row gap-y-8"
+        >
           <!-- texts -->
-          <div>
+          <div class="text-center md:text-left">
             <p class="text-[#FF4060] font-bold text-[24px]">Find your</p>
             <h3
               class="text-[30px] leading-10 md:text-[40px] font-bold text-white"
@@ -239,28 +262,173 @@
             </h3>
           </div>
           <!-- navigations -->
-          <div class="flex gap-x-4 text-white">
-            <p>Left-></p>
-            <p>Right-></p>
+          <div class="flex gap-x-10 text-white">
+            <button class="prev-button nav-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-button nav-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
         </div>
 
         <!-- characters carousel -->
         <div>
-          <div class="characters">
-            <div class="loop">
-              <!-- single chracter -->
-              <div class="item">character 1</div>
-              <!-- single character end -->
-
-              <!-- single chracter -->
-              <div class="item">character 1</div>
-              <!-- single character end -->
-
-              <!-- single chracter -->
-              <div class="item">character 1</div>
-              <!-- single character end -->
+          <div class="autoplay-slick-carousel text-white flex py-10">
+            <!-- single character -->
+            <div
+              class="single-char border flex justify-center mx-2 sm:mx-3 md:mx-5"
+            >
+              <h3><span class="font-bold">A.</span> Monkey Icon</h3>
+              <img src="/assets/images/character-2.png" alt="" />
+              <div
+                class="flex items-center justify-between w-10/12 mt-1 text-start"
+              >
+                <div class="flex flex-col">
+                  <p>12:43:54</p>
+                  <p class="font-normal text-[12px] text-gray-400">
+                    Remaining Time
+                  </p>
+                </div>
+                <div class="flex items-center flex-col">
+                  <p class="text-yellow-400 font-bold">19.84 ETH</p>
+                  <p class="text-[12px] text-gray-400">Highest Bid</p>
+                </div>
+              </div>
             </div>
+            <!-- single characeter end -->
+            <!-- single character -->
+            <div
+              class="single-char border flex justify-center mx-2 sm:mx-3 md:mx-5"
+            >
+              <h3><span class="font-bold">A.</span> Monkey Icon</h3>
+              <img src="/assets/images/character-3.png" alt="" />
+              <div
+                class="flex items-center justify-between w-10/12 mt-1 text-start"
+              >
+                <div class="flex flex-col">
+                  <p>12:43:54</p>
+                  <p class="font-normal text-[12px] text-gray-400">
+                    Remaining Time
+                  </p>
+                </div>
+                <div class="flex items-center flex-col">
+                  <p class="text-yellow-400 font-bold">19.84 ETH</p>
+                  <p class="text-[12px] text-gray-400">Highest Bid</p>
+                </div>
+              </div>
+            </div>
+            <!-- single characeter end -->
+            <!-- single character -->
+            <div
+              class="single-char border flex justify-center mx-2 sm:mx-3 md:mx-5"
+            >
+              <h3><span class="font-bold">A.</span> Monkey Icon</h3>
+              <img src="/assets/images/character-4.png" alt="" />
+              <div
+                class="flex items-center justify-between w-10/12 mt-1 text-start"
+              >
+                <div class="flex flex-col">
+                  <p>12:43:54</p>
+                  <p class="font-normal text-[12px] text-gray-400">
+                    Remaining Time
+                  </p>
+                </div>
+                <div class="flex items-center flex-col">
+                  <p class="text-yellow-400 font-bold">19.84 ETH</p>
+                  <p class="text-[12px] text-gray-400">Highest Bid</p>
+                </div>
+              </div>
+            </div>
+            <!-- single characeter end -->
+            <!-- single character -->
+            <div
+              class="single-char border flex justify-center mx-2 sm:mx-3 md:mx-5"
+            >
+              <h3><span class="font-bold">A.</span> Monkey Icon</h3>
+              <img src="/assets/images/character-2.png" alt="" />
+              <div
+                class="flex items-center justify-between w-10/12 mt-1 text-start"
+              >
+                <div class="flex flex-col">
+                  <p>12:43:54</p>
+                  <p class="font-normal text-[12px] text-gray-400">
+                    Remaining Time
+                  </p>
+                </div>
+                <div class="flex items-center flex-col">
+                  <p class="text-yellow-400 font-bold">19.84 ETH</p>
+                  <p class="text-[12px] text-gray-400">Highest Bid</p>
+                </div>
+              </div>
+            </div>
+            <!-- single characeter end -->
+            <!-- single character -->
+            <div
+              class="single-char border flex justify-center mx-2 sm:mx-3 md:mx-5"
+            >
+              <h3><span class="font-bold">A.</span> Monkey Icon</h3>
+              <img src="/assets/images/character-3.png" alt="" />
+              <div
+                class="flex items-center justify-between w-10/12 mt-1 text-start"
+              >
+                <div class="flex flex-col">
+                  <p>12:43:54</p>
+                  <p class="font-normal text-[12px] text-gray-400">
+                    Remaining Time
+                  </p>
+                </div>
+                <div class="flex items-center flex-col">
+                  <p class="text-yellow-400 font-bold">19.84 ETH</p>
+                  <p class="text-[12px] text-gray-400">Highest Bid</p>
+                </div>
+              </div>
+            </div>
+            <!-- single characeter end -->
+            <!-- single character -->
+            <div
+              class="single-char border flex justify-center mx-2 sm:mx-3 md:mx-5"
+            >
+              <h3><span class="font-bold">A.</span> Monkey Icon</h3>
+              <img src="/assets/images/character-4.png" alt="" />
+              <div
+                class="flex items-center justify-between w-10/12 mt-1 text-start"
+              >
+                <div class="flex flex-col">
+                  <p>12:43:54</p>
+                  <p class="font-normal text-[12px] text-gray-400">
+                    Remaining Time
+                  </p>
+                </div>
+                <div class="flex items-center flex-col">
+                  <p class="text-yellow-400 font-bold">19.84 ETH</p>
+                  <p class="text-[12px] text-gray-400">Highest Bid</p>
+                </div>
+              </div>
+            </div>
+            <!-- single characeter end -->
+            <!-- single character -->
+            <div
+              class="single-char border flex justify-center mx-2 sm:mx-3 md:mx-5"
+            >
+              <h3><span class="font-bold">A.</span> Monkey Icon</h3>
+              <img src="/assets/images/character-2.png" alt="" />
+              <div
+                class="flex items-center justify-between w-10/12 mt-1 text-start"
+              >
+                <div class="flex flex-col">
+                  <p>12:43:54</p>
+                  <p class="font-normal text-[12px] text-gray-400">
+                    Remaining Time
+                  </p>
+                </div>
+                <div class="flex items-center flex-col">
+                  <p class="text-yellow-400 font-bold">19.84 ETH</p>
+                  <p class="text-[12px] text-gray-400">Highest Bid</p>
+                </div>
+              </div>
+            </div>
+            <!-- single characeter end -->
           </div>
         </div>
       </div>
@@ -281,15 +449,48 @@
     <script src="main.js"></script>
   </body>
   <script>
-    // Initialize Owl Carousel
-    $(".owl-carousel").owlCarousel({
-      items: 1, // Display only one item per slide
-      autoplay: true,
-      autoplayTimeout: 2000,
-      autoplayHoverPause: true,
-      loop: true, // Enable looping
-      nav: false, // Show navigation arrows
-      dots: false, // Hide pagination dots
+    // sclick
+    $(document).ready(function () {
+      $(".uppercarousel").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: "",
+        nextArrow: "",
+      });
+    });
+
+    // characters
+    $(document).ready(function () {
+      $(".autoplay-slick-carousel").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $(".prev-button"),
+        nextArrow: $(".next-button"),
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
     });
   </script>
 </html>
