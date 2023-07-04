@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.main {
+  /* background: linear-gradient(to bottom, #6449e4, #000000); */
+  background: #1e1e1e;
+}
+.sm-ctr {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.stylish-button {
+  background: linear-gradient(to right, #ff4060, #ff81c5, #6d5eea);
+}
+/* button lineear */
+/* background: linear-gradient(to right, #FF4060, #FF81C5, #6D5EEA); */
+
+/* background: linear-gradient(to right, #ff1a40, #ff49ab, #452fff); */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(114, 73, 73);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #877ce8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #312882;
+}
+
+.owl-slide {
+  width: 100%; /* Set the slide width to full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel .owl-nav {
+  display: none; /* Hide the navigation arrows */
+}
