@@ -13,6 +13,9 @@ module.exports = {
           "2xl": "8rem",
         },
       },
+      colors: {
+        pinkishRed: "#FF4262",
+      },
     },
   },
   plugins: [],
